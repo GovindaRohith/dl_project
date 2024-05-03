@@ -1,0 +1,46 @@
+Try CNN,pool,CNN,pool
+Try conv_next
+Enhance ResNet (epoches)
+
+ResNet results:
+ResNet-18,34,50 -- worked well
+ResNet-101,152(worst) -not so well
+
+
+conv_next results:
+tried_tiny with epoches=10, should try by epoche=8
+tried_base with epoches=10 bad
+tried_large time large so not good
+tried_tiny-train_acc=89.31, kaggle=0.46960
+
+
+conv_next_small:
+for epoches=11: overfit acc=90; kaggle=0.505
+for epoches=10; acc=80; kaggle=0.52
+epoches=9; kaggle:0.49626
+
+conv_next_basic:
+for epoches=11;kaggle=0.51040
+for epoches=10;kaggle=0.52746
+next try epoches=9,kaggle=0.503
+epoches=8, kaggle=0.470
+
+
+dense_net_121:
+epoches=8, kaggle=0.49760 rest all bad
+
+
+Batch_Size=64,224,224--tried with conv_next_tiny
+epoches=9, kaggle=0.51680
+
+
+
+Kaggles:
+ResNet-18 submitted --done completely
+ResNet-34 submitted --done completely
+ResNet-50 submitted --done completely
+ResNet-101 submitted --done completely
+
+conv_next_tiny ambigous-again
+conv_next_small submitted-submit- once more
+conv_next_basic submitted-once submit again-try again
